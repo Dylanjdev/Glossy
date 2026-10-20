@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700;1,800&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  font-family: 'Inter', Arial, sans-serif;
+  color: #171717;
+  background: #f5f4f1;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --red: #ef1b23;
+  --red-dark: #bd090f;
+  --ink: #0b0b0c;
+  --paper: #f5f4f1;
+  --silver: #bfc2c5;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 110px; }
+
+body { margin: 0; min-width: 320px; min-height: 100vh; overflow-x: hidden; }
+
+body, button, input, select, textarea { font: inherit; }
+
+a { color: inherit; }
+
+button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
+
+button { border: 0; }
+
+img { display: block; max-width: 100%; }
+
+::selection { background: var(--red); color: #fff; }
+
+:focus-visible { outline: 3px solid #ff4650; outline-offset: 3px; }
+
+#root { min-height: 100vh; }
