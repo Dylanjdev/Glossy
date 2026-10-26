@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700;1,800&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400&display=swap');
 
 :root {
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: 'DM Sans', Arial, sans-serif;
   color: #171717;
   background: #f5f4f1;
   font-synthesis: none;
@@ -11,12 +11,15 @@
   --red-dark: #bd090f;
   --ink: #0b0b0c;
   --paper: #f5f4f1;
-  --silver: #bfc2c5;
+  --muted: #656568;
+  --line: #dedddd;
+  --line-dark: #bfc2c5;
+  --serif: 'Source Serif 4', Georgia, serif;
 }
 
 * { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; scroll-padding-top: 110px; }
+html { scroll-behavior: smooth; scroll-padding-top: 100px; }
 
 body { margin: 0; min-width: 320px; min-height: 100vh; overflow-x: hidden; }
 
@@ -30,7 +33,7 @@ button { border: 0; }
 
 img { display: block; max-width: 100%; }
 
-::selection { background: var(--red); color: #fff; }
+::selection { color: #fff; background: var(--red); }
 
 :focus-visible { outline: 3px solid #ff4650; outline-offset: 3px; }
 
