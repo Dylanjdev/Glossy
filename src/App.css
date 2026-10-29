@@ -5,9 +5,8 @@
 
 .section-wrap { width: min(1160px, calc(100% - 48px)); margin-inline: auto; }
 
-.notice-bar { min-height: 34px; padding: 7px clamp(24px, 5vw, 72px); display: flex; align-items: center; justify-content: space-between; gap: 20px; color: #fff; background: var(--red); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+.notice-bar { min-height: 34px; padding: 7px clamp(24px, 5vw, 72px); display: flex; align-items: center; justify-content: center; gap: 20px; color: #fff; background: var(--red); font-size: 11px; letter-spacing: .08em; text-align: center; text-transform: uppercase; }
 .notice-bar p { margin: 0; font-weight: 800; }
-.notice-bar span { opacity: .82; }
 
 .header { height: 90px; padding: 0 clamp(24px, 5vw, 72px); display: flex; align-items: center; justify-content: space-between; position: relative; z-index: 20; background: var(--paper); border-bottom: 1px solid var(--line); }
 .brand { width: 174px; height: 76px; display: flex; align-items: center; overflow: hidden; }
@@ -51,7 +50,9 @@
 .straight-talk__inner { padding-block: 70px; display: grid; grid-template-columns: 60px 1.2fr .8fr; gap: clamp(30px, 6vw, 80px); align-items: start; }
 .straight-talk .section-number { color: #66666a; }
 .straight-talk h2 { max-width: 650px; margin: 0; font-family: var(--serif); font-size: clamp(38px, 4.8vw, 65px); font-weight: 500; letter-spacing: -.035em; line-height: 1; }
-.straight-talk__inner > p:last-child { margin: 29px 0 0; color: #a4a4a8; font-size: 15px; line-height: 1.75; }
+.straight-talk__mission { margin-top: 29px; }
+.straight-talk__mission p { margin: 0; color: #a4a4a8; font-size: 15px; line-height: 1.75; }
+.straight-talk__mission p + p { margin-top: 18px; padding-top: 18px; color: #d5d5d7; border-top: 1px solid #3b3b3e; font-family: var(--serif); font-size: 13px; font-style: italic; line-height: 1.6; }
 
 .services { padding-block: 110px 120px; }
 .section-intro { display: grid; grid-template-columns: 60px 1fr; gap: clamp(30px, 6vw, 80px); }
@@ -123,7 +124,7 @@
   .shop-card { width: min(100%, 560px); }
   .shop-card__logo img { width: min(112%, 570px); }
   .straight-talk__inner { grid-template-columns: 45px 1fr; }
-  .straight-talk__inner > p:last-child { grid-column: 2; margin-top: 0; }
+  .straight-talk__mission { grid-column: 2; margin-top: 0; }
   .service-row { grid-template-columns: 45px .8fr 1.2fr 44px; gap: 22px; }
   .estimate__grid, .careers__grid, .contact { grid-template-columns: 1fr; }
   .careers .section-number { margin-bottom: 35px; }
@@ -135,7 +136,6 @@
 @media (max-width: 640px) {
   .section-wrap { width: min(100% - 36px, 1160px); }
   .notice-bar { padding-inline: 18px; }
-  .notice-bar span { display: none; }
   .header { padding-inline: 14px; }
   .brand { width: 158px; }
   .brand img { width: 168px; }
@@ -146,7 +146,7 @@
   .shop-card { width: calc(100% - 10px); }
   .shop-card__logo { min-height: 190px; }
   .straight-talk__inner { padding-block: 62px; grid-template-columns: 1fr; gap: 18px; }
-  .straight-talk__inner > p:last-child { grid-column: auto; margin-top: 6px; }
+  .straight-talk__mission { grid-column: auto; margin-top: 6px; }
   .services, .estimate, .careers, .contact { padding-block: 80px; }
   .section-intro { grid-template-columns: 1fr; gap: 18px; }
   .section-intro h2, .estimate h2, .careers h2, .contact h2 { font-size: 49px; }

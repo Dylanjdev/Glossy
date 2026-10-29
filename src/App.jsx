@@ -59,8 +59,7 @@ function App() {
       <a className="skip-link" href="#main">Skip to content</a>
 
       <div className="notice-bar">
-        <p>Paint jobs start at $1,200</p>
-        <span>Currently booking by appointment</span>
+        <p>Paint jobs start at twelve hundred. Booking by appointment only.</p>
       </div>
 
       <header className="header">
@@ -110,7 +109,10 @@ function App() {
               <p className="kicker">A little straight talk</p>
               <h2>A good finish starts long before the first coat.</h2>
             </div>
-            <p>Prep matters. So does knowing what you expect from the finished car. We’d rather ask the right questions up front than give you a vague answer and sort it out later.</p>
+            <div className="straight-talk__mission">
+              <p>Tell us what you want from the car, and we’ll tell you what it takes to get there.</p>
+              <p>With 26 years in restoration, collision, and automotive refinishing, the owner is a DuPont Certified Painter since the 1990s.</p>
+            </div>
           </div>
         </section>
 
