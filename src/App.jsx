@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import transparentLogo from './assets/TransparentLogoOptimized.png'
+import transparentLogo from './assets/TransparentLogoOptimized.webp'
 import './App.css'
 
 const Icon = ({ name, size = 22 }) => {
@@ -64,7 +64,7 @@ function App() {
 
       <header className="header">
         <a className="brand" href="#top" onClick={closeMenu} aria-label="Glossy Finish Auto Painting home">
-          <img src={transparentLogo} alt="Glossy Finish Auto Painting" />
+          <img src={transparentLogo} alt="Glossy Finish Auto Painting" width="800" height="533" fetchPriority="high" />
         </a>
 
         <button className="menu-button" type="button" onClick={() => setMenuOpen((open) => !open)} aria-expanded={menuOpen} aria-controls="primary-nav" aria-label={menuOpen ? 'Close menu' : 'Open menu'}>
@@ -92,7 +92,7 @@ function App() {
           </div>
 
           <aside className="shop-card" aria-label="Glossy Finish booking information">
-            <div className="shop-card__logo"><img src={transparentLogo} alt="" /></div>
+            <div className="shop-card__logo"><img src={transparentLogo} alt="" width="800" height="533" fetchPriority="high" /></div>
             <div className="shop-card__details">
               <p>Paint jobs from</p>
               <strong>$1,200</strong>
@@ -219,7 +219,7 @@ function App() {
 
       <footer className="footer">
         <div className="section-wrap footer__inner">
-          <img src={transparentLogo} alt="Glossy Finish Auto Painting" />
+          <img src={transparentLogo} alt="Glossy Finish Auto Painting" width="800" height="533" loading="lazy" decoding="async" />
           <p>Auto painting by appointment.<br />Permanent location coming soon.</p>
           <p className="footer__copyright">© {new Date().getFullYear()} Glossy Finish Auto Painting</p>
         </div>
