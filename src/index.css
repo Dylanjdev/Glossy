@@ -6,22 +6,6 @@
   src: url('./assets/fonts/dm-sans-latin.woff2') format('woff2');
 }
 
-@font-face {
-  font-family: 'Source Serif 4';
-  font-style: normal;
-  font-weight: 400 500;
-  font-display: swap;
-  src: url('./assets/fonts/source-serif-4-latin.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Source Serif 4';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url('./assets/fonts/source-serif-4-italic-latin.woff2') format('woff2');
-}
-
 :root {
   font-family: 'DM Sans', Arial, sans-serif;
   color: #171717;
@@ -37,7 +21,7 @@
   --muted: #656568;
   --line: #dedddd;
   --line-dark: #bfc2c5;
-  --serif: 'Source Serif 4', Georgia, serif;
+  --serif: Georgia, 'Times New Roman', serif;
 }
 
 * { box-sizing: border-box; }
@@ -54,7 +38,7 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 
 button { border: 0; }
 
-img { display: block; max-width: 100%; }
+img { display: block; max-width: 100%; height: auto; }
 
 ::selection { color: #fff; background: var(--red); }
 
